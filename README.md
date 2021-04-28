@@ -1,3 +1,4 @@
 # VAST Golang Library
 
-[![godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/rs/vast) [![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/rs/vast/master/LICENSE) [![Build Status](https://travis-ci.org/rs/vast.svg?branch=master)](https://travis-ci.org/rs/vast) [![Coverage](http://gocover.io/_badge/github.com/rs/vast)](http://gocover.io/github.com/rs/vast)
+This library is used for **Reach Extension** project.  
+Reach out to us if you have any questions in Slack [#ads-direct-demand-bid](https://unity.slack.com/archives/CHXT9Q63Z).
