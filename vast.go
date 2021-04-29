@@ -272,24 +272,24 @@ type Companion struct {
 	APIFramework string `xml:"apiFramework,attr,omitempty"`
 	// Used to match companion creative to publisher placement areas on the page.
 	AdSlotID string `xml:"adSlotId,attr,omitempty"`
-	// URL to open as destination page when user clicks on the the companion banner ad.
-	CompanionClickThrough CDATAString `xml:",omitempty"`
-	// URLs to ping when user clicks on the the companion banner ad.
-	CompanionClickTracking []CDATAString `xml:",omitempty"`
 	// Alt text to be displayed when companion is rendered in HTML environment.
 	AltText string `xml:",omitempty"`
-	// The creativeView should always be requested when present. For Companions
-	// creativeView is the only supported event.
-	TrackingEvents []Tracking `xml:"TrackingEvents>Tracking,omitempty"`
-	// Data to be passed into the companion ads. The apiFramework defines the method
-	// to use for communication (e.g. “FlashVar”)
-	AdParameters *AdParameters `xml:",omitempty"`
 	// URL to a static file, such as an image or SWF file
 	StaticResource *StaticResource `xml:",omitempty"`
 	// URL source for an IFrame to display the companion element
 	IFrameResource *CDATAString `xml:",omitempty"`
 	// HTML to display the companion element
 	HTMLResource *HTMLResource `xml:",omitempty"`
+	// The creativeView should always be requested when present. For Companions
+	// creativeView is the only supported event.
+	TrackingEvents []Tracking `xml:"TrackingEvents>Tracking,omitempty"`
+	// Data to be passed into the companion ads. The apiFramework defines the method
+	// to use for communication (e.g. “FlashVar”)
+	AdParameters *AdParameters `xml:",omitempty"`
+	// URL to open as destination page when user clicks on the the companion banner ad.
+	CompanionClickThrough *CDATAString `xml:",omitempty"`
+	// URLs to ping when user clicks on the the companion banner ad.
+	CompanionClickTracking []CDATAString `xml:",omitempty"`
 }
 
 // CompanionWrapper defines a companion ad in a wrapper
