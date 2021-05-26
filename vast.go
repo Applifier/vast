@@ -44,7 +44,7 @@ type CDATAString struct {
 // URIs necessary to display the ad.
 type InLine struct {
 	// The name of the ad server that returned the ad
-	AdSystem *AdSystem
+	AdSystem string `xml:",omitempty"`
 	// The common name of the ad
 	AdTitle CDATAString
 	// One or more URIs that directs the video player to a tracking resource file that the
@@ -112,7 +112,7 @@ type Pricing struct {
 // the ad.
 type Wrapper struct {
 	// The name of the ad server that returned the ad
-	AdSystem *AdSystem
+	AdSystem string `xml:",omitempty"`
 	// URL of ad tag of downstream Secondary Ad Server
 	VASTAdTagURI CDATAString
 	// One or more URIs that directs the video player to a tracking resource file that the
